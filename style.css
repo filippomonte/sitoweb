@@ -1,0 +1,65 @@
+/* Reset base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Font e sfondo globale */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* 1) Navbar trasparente overlay */
+.navbar {
+  background: transparent !important;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* 2) Hero banner con background-image */
+.hero {
+  background: url("img/jumbo.png") center/cover no-repeat;
+  padding: 160px 0 80px;
+  position: relative;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Tipografia hero */
+.display-4 {
+  font-size: 2.5rem;
+}
+.lead {
+  font-size: 1.25rem;
+  opacity: 0.9;
+}
+
+/* 3) Wave separator */
+.wave-divider {
+  overflow: hidden;      /* nasconde eventuali artefatti */
+  line-height: 0;  
+  border-color: black;      /* zero gap sopra/sotto */
+}
+
+.wave-divider svg {
+  display: block;
+  width: 100%;
+  height: 120px; 
+  border-color: black         /* regola l’altezza dell’onda */
+}
+.wave-divider svg path {
+  filter: drop-shadow(0 2px 2px rgba(0,0,0,0.2));
+
+/* Primary Discord override */
+.bg-primary {
+  background-color: #5865F2 !important;
+}
+
+/* Footer link hover */
+footer a:hover {
+  text-decoration: underline;
+}
